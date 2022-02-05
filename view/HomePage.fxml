@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+   <top>
+      <AnchorPane prefHeight="49.0" prefWidth="748.0" style="-fx-background-color: #FFFFC2;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="txtDate" fill="#085314" layoutX="524.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17/12/2021" wrappingWidth="114.1015625" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="28.0" />
+            <Text fx:id="txtTime" fill="#085314" layoutX="530.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6.33.Pm" wrappingWidth="106.666015625" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="29.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="351.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="-3.0" layoutY="-6.0" prefHeight="519.0" prefWidth="167.0" style="-fx-background-color: #FFFFC2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-3.0" AnchorPane.topAnchor="-6.0">
+               <children>
+                  <Pane onMouseClicked="#studentAddOnAction" prefHeight="46.0" prefWidth="167.0" style="-fx-background-color: #36454F;">
+                     <children>
+                        <Text fill="#ffffc2" layoutX="61.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add" />
+                     </children>
+                  </Pane>
+                  <Pane onMouseClicked="#viewStudentOnAction" prefHeight="44.0" prefWidth="160.0" style="-fx-background-color: #36454F;">
+                     <children>
+                        <Text fill="#ffffc2" layoutX="36.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Studenet" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane onMouseClicked="#ManageCourseStudent" prefHeight="42.0" prefWidth="167.0" style="-fx-background-color: #36454F;">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Text fill="#ffffc2" layoutX="42.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Course" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <StackPane fx:id="loadStackPane" prefHeight="530.0" prefWidth="722.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

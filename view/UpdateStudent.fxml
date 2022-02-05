@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="518.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateController">
+    <children>
+        <AnchorPane fx:id="updateContext" layoutX="-7.0" layoutY="-7.0" prefHeight="530.0" prefWidth="722.0" style="-fx-background-color: #2b3856;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text fill="#aaf0d1" layoutX="18.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.Student id  -:" />
+                <Text fill="#aaf0d1" layoutX="18.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.NIC-:" wrappingWidth="104.13671875" />
+                <Text fill="#aaf0d1" layoutX="18.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7.Mobile Number-:" wrappingWidth="119.13671875" />
+                <TextField fx:id="txtStudentId" editable="false" layoutX="133.0" layoutY="23.0" prefHeight="25.0" prefWidth="461.0" />
+                <TextField fx:id="txtPrentName" layoutX="133.0" layoutY="174.0" prefHeight="25.0" prefWidth="461.0" />
+                <TextField fx:id="txtDateBirth" layoutX="133.0" layoutY="133.0" prefHeight="25.0" prefWidth="146.0" />
+                <TextField fx:id="txtNIC" layoutX="134.0" layoutY="93.0" prefHeight="25.0" prefWidth="460.0" />
+                <TextField fx:id="txtStudentName" layoutX="133.0" layoutY="57.0" prefHeight="25.0" prefWidth="461.0" />
+                <TextField fx:id="txtAddress" layoutX="134.0" layoutY="253.0" prefHeight="25.0" prefWidth="460.0" />
+                <TextField fx:id="txtMobileNumber" layoutX="134.0" layoutY="213.0" prefHeight="25.0" prefWidth="461.0" />
+                <TextField fx:id="txtEmail" layoutX="134.0" layoutY="331.0" prefHeight="25.0" prefWidth="461.0" />
+              <Text fill="#aaf0d1" layoutX="13.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12.Add Course Name-:" wrappingWidth="86.45703125" />
+            <TableView fx:id="courseTable" layoutX="137.0" layoutY="423.0" onMouseClicked="#tblCourseRomeOnAction" prefHeight="61.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="colCourseName" prefWidth="93.0" text="Course Name" />
+                <TableColumn fx:id="colCourseRemove" prefWidth="103.0" text="Remove" />
+              </columns>
+            </TableView>
+              <ComboBox fx:id="cmbCourseName" layoutX="133.0" layoutY="361.0" prefHeight="25.0" prefWidth="461.0" />
+            <JFXButton layoutX="508.0" layoutY="405.0" onAction="#addCourse" style="-fx-background-color: #E5E4E2;" text="Add Course" />
+            <TextField fx:id="txtGender" editable="false" layoutX="364.0" layoutY="133.0" prefHeight="25.0" prefWidth="226.0" />
+            <JFXButton layoutX="466.0" layoutY="474.0" onAction="#backOnAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #E5E4E2;" text="Back" />
+              <JFXButton layoutX="532.0" layoutY="474.0" onAction="#studentUpdateOnAction" style="-fx-background-color: #E5E4E2;" text="Update" />
+              <JFXButton layoutX="603.0" layoutY="474.0" onAction="#clearOnAction" style="-fx-background-color: #E5E4E2;" text="Clear All" />
+            </children></AnchorPane>
+        <Text fill="#aaf0d1" layoutX="18.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.Name Of Student -:" wrappingWidth="119.13671875" />
+        <Text fill="#aaf0d1" layoutX="18.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.Date Of Birth -:" wrappingWidth="94.13671875" />
+        <Text fill="#aaf0d1" layoutX="18.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6.Perenet Name-:" wrappingWidth="119.13671875" />
+        <Text fill="#aaf0d1" layoutX="294.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.Gender-:" wrappingWidth="119.13671875" />
+        <Text fill="#aaf0d1" layoutX="18.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9.Ordinary Level Result-:" wrappingWidth="119.13671875" />
+        <Text fill="#aaf0d1" layoutX="18.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8.Address" wrappingWidth="119.13671875" />
+        <Text fill="#aaf0d1" layoutX="304.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10.Advanced Level Result-:" wrappingWidth="119.13671875" />
+        <Text fill="#aaf0d1" layoutX="18.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11.Email-:" wrappingWidth="119.13671875" />
+        <TextField fx:id="txtOLResult" layoutX="133.0" layoutY="291.0" prefHeight="25.0" prefWidth="151.0" />
+        <TextField fx:id="txtAlResult" layoutX="414.0" layoutY="289.0" prefHeight="25.0" prefWidth="180.0" />
+    </children>
+
+</AnchorPane>
